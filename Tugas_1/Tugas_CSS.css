@@ -1,0 +1,48 @@
+* {
+    color: #dc3545
+}
+
+.nav-text-logo {
+    color: #dc3545;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.hero-section{
+    position: relative;
+}
+
+/* navbar mengapung */
+.navbar-custom{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+}
+
+/* hero image */
+.hero-img{
+    width: 100%;
+    /* height: 500px */
+    object-fit: cover;
+}
+
+/* gradient biru di bawah gambar */
+.hero-section::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0),
+        #6DCFEC
+    );
+}
