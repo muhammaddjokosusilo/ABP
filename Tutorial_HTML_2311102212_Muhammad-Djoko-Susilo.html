@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML: Muhammad Djoko Susilo</title>
+</head>
+<body>
+    <h1>Exercise 1</h1>
+    <table border="1">
+        <tr style="height: 30px;;">
+            <th colspan="2" rowspan="2" width="100">Nama <br> Lengkap</th>
+            <th colspan="2">Gelar Pendidikan</th>
+            <th rowspan="2">Age</th>
+        </tr>
+        <tr>
+            <th>Sarjana</th>
+            <th>Magister</th>
+        </tr>
+        <tr>
+            <td colspan="2">Budi</td>
+            <td>S.Kom</td>
+            <td>M.Sc</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td colspan="2">Andi</td>
+            <td>S.SiKom</td>
+            <td>M.T</td>
+            <td>52</td>
+    </table>
+
+    <h1>Exercise 2</h1>
+    <h2>Data Mahasiswa</h2>
+
+    <form>
+        <table>
+            <tr>
+                <td>NIM</td>
+                <td>:</td>
+                <td><input type="text" name="nim"></td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Tgl Lahir (dd-mm-yyyy)</td>
+                <td>:</td>
+                <td><input type="date" name="tgl_lahir"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="jk" value="Laki-Laki"> Laki-Laki
+                    <input type="radio" name="jk" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat di Bandung</td>
+                <td>:</td>
+                <td><textarea name="alamat" rows="3" cols="25"></textarea></td>
+            </tr>
+            <tr>
+                <td>Tinggal di</td>
+                <td>:</td>
+                <td>
+                    <select name="tinggal">
+                        <option value="">-pilih-</option>
+                        <option value="kos">Kos/kontrakan</option>
+                        <option value="rumah_saudara">Rumah saudara</option>
+                        <option value="rumah_orangtua">Rumah orang tua</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Pilih 2 hobi yang paling disukai</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="hobi" value="Science"> Science<br>
+                    <input type="checkbox" name="hobi" value="Technology"> Technology<br>
+                    <input type="checkbox" name="hobi" value="Art"> Art<br>
+                    <input type="checkbox" name="hobi" value="Sport"> Sport
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
