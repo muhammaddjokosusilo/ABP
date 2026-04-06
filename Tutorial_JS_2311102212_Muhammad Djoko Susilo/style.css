@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+/* Header & Navigasi */
+header {
+    background-color: #2b7fff;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.logo span {
+    color: #ffcc00;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Container untuk tombol atas */
+.top-buttons-container {
+    display: flex;         
+    gap: 20px;            
+    padding: 20px 50px;   
+    max-width: 1200px;
+    margin: 0 auto;       
+}
+
+.top-buttons-container .card {
+    flex: 1;              
+    height: 200px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;    
+    border-radius: 8px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .top-buttons-container {
+        flex-direction: column;
+    }
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Membuat 2 kolom */
+    gap: 20px;
+    padding: 40px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling Card */
+.card {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#target-text {
+    width: 100%; 
+    transition: text-align 0.3s ease;
+    padding: 0 20px; 
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card i {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/* Warna Masing-masing Card */
+.analytic { background-color: #1abc9c; }
+.creative { background-color: #f39c12; }
+.development { background-color: #e74c3c; }
+.marketing { background-color: #3498db; }
+.media { background-color: #f1c40f; }
+.optimization { background-color: #2ecc71; }
+
+/* Khusus icon marketing (dua gear) */
+.marketing .small-cog {
+    font-size: 30px;
+    margin-left: -10px;
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    nav ul {
+        flex-wrap: wrap;
+    }
+}
